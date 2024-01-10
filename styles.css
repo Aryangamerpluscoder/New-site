@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.set{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -550px;
+  margin-left: 150px;
+}
+.button-container {
+    display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+.color-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.color-button[data-color="blue"] {
+    background-color: blue;
+}
+
+.color-button[data-color="royalblue"] {
+    background-color: royalblue;
+}
+
+.color-button[data-color="red"] {
+    background-color: red;
+}
+
+.color-button[data-color="limegreen"] {
+    background-color: limegreen;
+}
+
+.color-button[data-color="pink"] {
+    background-color: pink;
+}
+
+.color-button[data-color="white"] {
+    background-color: white;
+}
+
+.color-button[data-color="aqua"] {
+    background-color: aqua;
+}
+
+.color-button[data-color="purple"] {
+    background-color: purple;
+}
+
+.color-button[data-color="black"] {
+    background-color: black;
+    color: white; /* Text color for black button */
+}
+
+.color-button[data-color="darkpurple"] {
+    background-color: darkpurple;
+}
+
+/* Styles for gradient buttons */
+.gradient-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.gradient-button[data-gradient="linear-gradient(to right, red, yellow)"] {
+    --background-gradient: linear-gradient(to right, red, yellow);
+}
+
+.gradient-button[data-gradient="linear-gradient(to right, green, blue)"] {
+    --background-gradient: linear-gradient(to right, green, blue);
+}
+
+.gradient-button[data-gradient="linear-gradient(to right, purple, pink)"] {
+    --background-gradient: linear-gradient(to right, purple, pink);
+}
+
+body {
+    background: var(--background-gradient, white); /* Default background color if none selected */
+    transition: background 0.5s;
+}

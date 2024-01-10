@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  padding: 10px;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  padding: 0 9px;
+}
+.logo{
+  width: 70px;
+}
+.Info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Info Img{
+  width: 300px;
+}
+footer ul li a i{
+  display: inline-block;
+}
+.poop{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.poop img{
+  width: 350px;
+  height: 300px;
+  margin: 0 40px;
+}
+.About-section{
+  display: block;
+}
+.About-section h1, h3{
+  color: white;
+  text-align: center;
+}
+.foot{
+  background: black;
+}
+.foot h1{
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+.foot ul li{
+  display: inline-block;
+  position: relative;
+  margin: 0 18px;
+  padding: 0 20px;
+}
+.foot ul li i{
+  color: azure;
+}
